@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTravel</title>
+    <link rel="stylesheet" href="../css/contactenos.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/image/logo/logoS.png" alt="logo">
+            <span>GlobeTravel</span>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./agencias.html">Agencias</a></li>
+                <li><a href="./precios.html">Precios</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+                <button id="darkToggle">☼</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <form class="formulario" action="#modal">
+
+            <h2>Contacto</h2>
+
+            <div class="grid">
+
+                <div class="campo">
+                    <input type="text" required placeholder=" ">
+                    <label>Nombre</label>
+                </div>
+
+                <div class="campo">
+                    <input type="text" required placeholder=" ">
+                    <label>Apellido</label>
+                </div>
+
+                <div class="campo full">
+                    <input type="email" required placeholder=" ">
+                    <label>Email</label>
+                </div>
+
+                <div class="campo full">
+                    <input type="text" required minlength="5" placeholder=" ">
+                    <label>Asunto</label>
+                </div>
+
+                <div class="campo full">
+                    <textarea required minlength="10" placeholder=" "></textarea>
+                    <label>Mensaje</label>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-enviar">
+                <span>Enviar</span>
+            </button>
+
+        </form>
+
+        <div id="modal" class="modal">
+            <div class="modal-box">
+                <h3>Mensaje enviado</h3>
+                <p>Gracias por contactarte con nosotros.</p>
+                <a href="#" class="cerrar">Cerrar</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <input type="email" placeholder="Tu email">
+                <button>Enviar</button>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.openstreetmap.org/export/embed.html"></iframe>
+            </div>
+        </div>
+
+        <p>© 2026 GlobeTravel</p>
+
+    </footer>
+    <script src="../js/darktheme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTravel</title>
+    <link rel="stylesheet" href="../css/blogstyle.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/image/logo/logoS.png" alt="logo">
+            <span>GlobeTravel</span>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./agencias.html">Agencias</a></li>
+                <li><a href="./precios.html">Precios</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+                <button id="darkToggle">☼</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <section class="blog-page">
+
+            <input type="radio" name="cat" id="todos" checked>
+            <input type="radio" name="cat" id="playa">
+            <input type="radio" name="cat" id="ciudad">
+            <input type="radio" name="cat" id="aventura">
+
+            <div class="filtros">
+                <label for="todos">Todos</label>
+                <label for="playa">Playa</label>
+                <label for="ciudad">Ciudad</label>
+                <label for="aventura">Aventura</label>
+            </div>
+
+            <div class="blog">
+
+                <div class="post playa">
+                    <span class="tag">Playa</span>
+                    <img src="../assets/image/b1.jpg">
+                    <h3>Caribe Premium</h3>
+                    <p>Resorts todo incluido con playas paradisíacas.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">M</div>
+                            <div class="texto">Excelente viaje.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">A</div>
+                            <div class="texto">Muy relajante.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">L</div>
+                            <div class="texto">Hermosas vistas.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">C</div>
+                            <div class="texto">Todo perfecto.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">J</div>
+                            <div class="texto">Volvería sin dudar.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post ciudad">
+                    <span class="tag">Ciudad</span>
+                    <img src="../assets/image/b2.jpg">
+                    <h3>París</h3>
+                    <p>Arte, cultura y gastronomía.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">S</div>
+                            <div class="texto">Muy romántico.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">P</div>
+                            <div class="texto">Hermosa ciudad.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">R</div>
+                            <div class="texto">Mucho por ver.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">E</div>
+                            <div class="texto">Excelente comida.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">T</div>
+                            <div class="texto">Inolvidable.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post aventura">
+                    <span class="tag">Aventura</span>
+                    <img src="../assets/image/destino6.jpg">
+                    <h3>Patagonia</h3>
+                    <p>Montañas y naturaleza extrema.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">D</div>
+                            <div class="texto">Impactante.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">F</div>
+                            <div class="texto">Muy desafiante.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">G</div>
+                            <div class="texto">Hermoso lugar.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">H</div>
+                            <div class="texto">Me encantó.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">K</div>
+                            <div class="texto">Gran experiencia.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post playa">
+                    <span class="tag">Playa</span>
+                    <img src="../assets/image/b3.jpg">
+                    <h3>Brasil</h3>
+                    <p>Playas, fiesta y clima ideal.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">N</div>
+                            <div class="texto">Muy divertido.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">O</div>
+                            <div class="texto">Excelente clima.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">Q</div>
+                            <div class="texto">Muy recomendado.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">U</div>
+                            <div class="texto">Volvería.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">V</div>
+                            <div class="texto">Hermosas playas.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post ciudad">
+                    <span class="tag">Ciudad</span>
+                    <img src="../assets/image/b4.jpg">
+                    <h3>New York</h3>
+                    <p>La ciudad que nunca duerme.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">W</div>
+                            <div class="texto">Muy activa.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">X</div>
+                            <div class="texto">Mucho para hacer.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">Y</div>
+                            <div class="texto">Increíble.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">Z</div>
+                            <div class="texto">Muy intensa.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">B</div>
+                            <div class="texto">Genial.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post aventura">
+                    <span class="tag">Aventura</span>
+                    <img src="../assets/image/b5.jpg">
+                    <h3>Amazonas</h3>
+                    <p>Exploración en la selva.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">I</div>
+                            <div class="texto">Muy salvaje.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">J</div>
+                            <div class="texto">Único.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">K</div>
+                            <div class="texto">Impactante.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">L</div>
+                            <div class="texto">Gran aventura.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">M</div>
+                            <div class="texto">Me encantó.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post playa">
+                    <span class="tag">Playa</span>
+                    <img src="../assets/image/b6.jpg">
+                    <h3>Maldivas</h3>
+                    <p>Lujo y tranquilidad.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">A</div>
+                            <div class="texto">Perfecto.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">B</div>
+                            <div class="texto">Muy exclusivo.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">C</div>
+                            <div class="texto">Hermoso.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">D</div>
+                            <div class="texto">Soñado.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">E</div>
+                            <div class="texto">Relax total.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post ciudad">
+                    <span class="tag">Ciudad</span>
+                    <img src="../assets/image/b7.jpg">
+                    <h3>Tokio</h3>
+                    <p>Modernidad y tradición.</p>
+                    <div class="comentarios">
+                        <div class="comentario">
+                            <div class="avatar">F</div>
+                            <div class="texto">Futurista.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">G</div>
+                            <div class="texto">Muy limpia.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">H</div>
+                            <div class="texto">Increíble cultura.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">I</div>
+                            <div class="texto">Muy organizada.</div>
+                        </div>
+                        <div class="comentario">
+                            <div class="avatar">J</div>
+                            <div class="texto">Me fascinó.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <input type="email" placeholder="Tu email">
+                <button>Enviar</button>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.openstreetmap.org/export/embed.html"></iframe>
+            </div>
+        </div>
+
+        <p>© 2026 GlobeTravel</p>
+
+    </footer>
+    <script src="../js/darktheme.js"></script>
+</body>
+
+</html>

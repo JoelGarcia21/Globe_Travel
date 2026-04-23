@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobeTravel</title>
+    <link rel="stylesheet" href="../css/destinostyle.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="../assets/image/logo/logoS.png" alt="logo">
+            <span>GlobeTravel</span>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./destinos.html">Destinos</a></li>
+                <li><a href="./agencias.html">Agencias</a></li>
+                <li><a href="./precios.html">Precios</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contactenos.html">Contactenos</a></li>
+                <button id="darkToggle">☼</button>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="destinos">
+            <input type="radio" name="filtro" id="todos" checked>
+            <input type="radio" name="filtro" id="cultural">
+            <input type="radio" name="filtro" id="naturaleza">
+            <input type="radio" name="filtro" id="playa">
+            <input type="radio" name="filtro" id="gastronomico">
+            <input type="radio" name="filtro" id="religioso">
+
+            <!-- FILTROS -->
+            <div class="filtros">
+                <label for="todos">Todos</label>
+                <label for="cultural">Cultural</label>
+                <label for="naturaleza">Naturaleza</label>
+                <label for="playa">Playa</label>
+                <label for="gastronomico">Gastronómico</label>
+                <label for="religioso">Religioso</label>
+            </div>
+
+            <div class="grid">
+
+                <div class="card cultural gastronomico">
+                    <img src="../assets/image/destino5.jpg">
+                    <div class="overlay">
+                        <h3>Italia</h3>
+                    </div>
+                </div>
+
+                <div class="card naturaleza">
+                    <img src="../assets/image/destino6.jpg">
+                    <div class="overlay">
+                        <h3>Patagonia</h3>
+                    </div>
+                </div>
+
+                <div class="card cultural">
+                    <img src="../assets/image/destino1.jpg">
+                    <div class="overlay">
+                        <h3>París</h3>
+                    </div>
+                </div>
+
+                <div class="card playa">
+                    <img src="../assets/image/destino7.jpg">
+                    <div class="overlay">
+                        <h3>Cancún</h3>
+                    </div>
+                </div>
+
+                <div class="card cultural religioso">
+                    <img src="../assets/image/destino8.jpg">
+                    <div class="overlay">
+                        <h3>Roma</h3>
+                    </div>
+                </div>
+
+                <div class="card naturaleza">
+                    <img src="../assets/image/destino9.jpg">
+                    <div class="overlay">
+                        <h3>Islandia</h3>
+                    </div>
+                </div>
+
+                <div class="card cultural religioso">
+                    <img src="../assets/image/destino10.jpg">
+                    <div class="overlay">
+                        <h3>Perú</h3>
+                    </div>
+                </div>
+
+                <div class="card cultural religioso">
+                    <img src="../assets/image/destino11.jpg">
+                    <div class="overlay">
+                        <h3>Egipto</h3>
+                    </div>
+                </div>
+
+                <div class="card cultural">
+                    <img src="../assets/image/destino2.jpg">
+                    <div class="overlay">
+                        <h3>Grecia</h3>
+                    </div>
+                </div>
+
+                <div class="card cultural gastronomico">
+                    <img src="../assets/image/destino12.jpg">
+                    <div class="overlay">
+                        <h3>Japón</h3>
+                    </div>
+                </div>
+
+                <div class="card naturaleza">
+                    <img src="../assets/image/destino13.jpg">
+                    <div class="overlay">
+                        <h3>Argentina</h3>
+                    </div>
+                </div>
+
+                <div class="card naturaleza">
+                    <img src="../assets/image/destino14.jpg">
+                    <div class="overlay">
+                        <h3>Nueva Zelanda</h3>
+                    </div>
+                </div>
+
+                <div class="card playa gastronomico">
+                    <img src="../assets/image/destino4.jpg">
+                    <div class="overlay">
+                        <h3>Tailandia</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TABLA -->
+            <div class="tabla-container">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Categoría</th>
+                            <th>Duración</th>
+                            <th>Precio (ARS)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td data-label="Destino">Italia</td>
+                            <td data-label="Categoría">Cultural / Gastronómico</td>
+                            <td data-label="Duración">8 días</td>
+                            <td data-label="Precio">$1.800.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Patagonia</td>
+                            <td data-label="Categoría">Naturaleza</td>
+                            <td data-label="Duración">5 días</td>
+                            <td data-label="Precio">$950.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">París</td>
+                            <td data-label="Categoría">Cultural</td>
+                            <td data-label="Duración">7 días</td>
+                            <td data-label="Precio">$2.100.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Cancún</td>
+                            <td data-label="Categoría">Playa</td>
+                            <td data-label="Duración">6 días</td>
+                            <td data-label="Precio">$2.400.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Roma</td>
+                            <td data-label="Categoría">Cultural / Religioso</td>
+                            <td data-label="Duración">8 días</td>
+                            <td data-label="Precio">$2.000.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Islandia</td>
+                            <td data-label="Categoría">Naturaleza</td>
+                            <td data-label="Duración">7 días</td>
+                            <td data-label="Precio">$2.800.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Perú</td>
+                            <td data-label="Categoría">Cultural / Religioso</td>
+                            <td data-label="Duración">6 días</td>
+                            <td data-label="Precio">$1.200.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Egipto</td>
+                            <td data-label="Categoría">Cultural / Religioso</td>
+                            <td data-label="Duración">9 días</td>
+                            <td data-label="Precio">$2.600.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Grecia</td>
+                            <td data-label="Categoría">Cultural</td>
+                            <td data-label="Duración">7 días</td>
+                            <td data-label="Precio">$2.200.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Japón</td>
+                            <td data-label="Categoría">Cultural / Gastronómico</td>
+                            <td data-label="Duración">10 días</td>
+                            <td data-label="Precio">$3.200.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Argentina</td>
+                            <td data-label="Categoría">Naturaleza</td>
+                            <td data-label="Duración">5 días</td>
+                            <td data-label="Precio">$600.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Nueva Zelanda</td>
+                            <td data-label="Categoría">Naturaleza</td>
+                            <td data-label="Duración">10 días</td>
+                            <td data-label="Precio">$3.500.000</td>
+                        </tr>
+
+                        <tr>
+                            <td data-label="Destino">Tailandia</td>
+                            <td data-label="Categoría">Playa / Gastronómico</td>
+                            <td data-label="Duración">9 días</td>
+                            <td data-label="Precio">$2.700.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="newsletter">
+                <h3>Suscribite</h3>
+                <input type="email" placeholder="Tu email">
+                <button>Enviar</button>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.openstreetmap.org/export/embed.html"></iframe>
+            </div>
+        </div>
+
+        <p>© 2026 GlobeTravel</p>
+
+    </footer>
+    <script src="../js/darktheme.js"></script>
+</body>
+
+</html>
