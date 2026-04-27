@@ -5,211 +5,384 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GlobeTravel</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/agenciasstyle.css">
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="header">
-        <div class="logo">
-            <img src="../assets/image/logo/logoS.png" alt="logo">
-            <span>GlobeTravel</span>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg ">
 
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./destinos.html">Destinos</a></li>
-                <li><a href="./agencias.html">Agencias</a></li>
-                <li><a href="./precios.html">Precios</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contactenos.html">Contactenos</a></li>
-                <button id="darkToggle">☼</button>
-            </ul>
+            <div class="container-fluid">
+
+                <a href="../index.html">
+                    <img class="" src="../assets/image/logo/logoS.png">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav ms-lg-auto text-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/destinos.html">Destinos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/agencias.html">Agencias</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/precios.html">Precios</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/blog.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contactenos.html">Contactenos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" id="darkToggle"><i class="bi bi-brightness-high-fill"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
         </nav>
     </header>
 
     <!-- MAIN -->
     <main>
-        <section class="agencias">
 
-            <h1>Agencias de Viaje</h1>
+        <section class="container py-5">
 
-            <div class="grid">
+            <h2 class="text-center mb-5">Agencias recomendadas</h2>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag.jpg">
-                            <h3>Expedia</h3>
-                            <span>Europa</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Viajes culturales completos por Europa.</p>
-                            <small>📍 Italia, Francia, España</small>
-                            <div class="rating">★★★★★</div>
+            <div class="row g-4">
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Expedia</h5>
+                                    <span>Europa</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Expedia</h5>
+                                    <p>Viajes culturales completos por Europa.</p>
+                                    <small>📍 Italia, Francia, España</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag1.jpg">
-                            <h3>Anywhere</h3>
-                            <span>Naturaleza</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Turismo ecológico y aventura.</p>
-                            <small>📍 Patagonia, Islandia</small>
-                            <div class="rating">★★★★☆</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag1.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Anywhere</h5>
+                                    <span>Naturaleza</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Anywhere</h5>
+                                    <p>Turismo ecológico y aventura.</p>
+                                    <small>📍 Patagonia, Islandia</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag2.jpg">
-                            <h3>Cathay Pacific</h3>
-                            <span>Playas</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Vacaciones en playas paradisíacas.</p>
-                            <small>📍 Cancún, Tailandia</small>
-                            <div class="rating">★★★★★</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag2.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Cathay Pacific</h5>
+                                    <span>Playas</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Cathay Pacific</h5>
+                                    <p>Vacaciones en playas paradisíacas.</p>
+                                    <small>📍 Cancún, Tailandia</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag3.jpg">
-                            <h3>Garunda Indonesia</h3>
-                            <span>Cultural</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Recorridos históricos guiados.</p>
-                            <small>📍 Roma, Grecia, Egipto</small>
-                            <div class="rating">★★★★☆</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag3.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Garunda Indonesia</h5>
+                                    <span>Cultural</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Garunda Indonesia</h5>
+                                    <p>Recorridos históricos guiados.</p>
+                                    <small>📍 Roma, Grecia, Egipto</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag4.jpg">
-                            <h3>Lufthansa</h3>
-                            <span>Gastronómico</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Experiencias culinarias únicas.</p>
-                            <small>📍 Japón, Perú</small>
-                            <div class="rating">★★★★★</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag4.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Lufthansa</h5>
+                                    <span>Gastronómico</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Lufthansa</h5>
+                                    <p>Experiencias culinarias únicas.</p>
+                                    <small>📍 Japón, Perú</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag5.jpg">
-                            <h3>Airbnb</h3>
-                            <span>Religioso</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Experiencias únicas en alojamientos locales y viajes espirituales personalizados.</p>
-                            <small>📍 India, Jerusalén, Perú</small>
-                            <div class="rating">★★★☆☆</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag5.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Airbnb</h5>
+                                    <span>Religioso</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Airbnb</h5>
+                                    <p>Experiencias únicas en alojamientos locales y viajes espirituales personalizados.
+                                    </p>
+                                    <small>📍 India, Jerusalén, Perú</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag6.jpg">
-                            <h3>Tripadvisor</h3>
-                            <span>Aventura</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Actividades extremas y excursiones recomendadas por viajeros de todo el mundo.</p>
-                            <small>📍 Nueva Zelanda, Canadá</small>
-                            <div class="rating">★★★★☆</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag6.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Tripadvisor</h5>
+                                    <span>Aventura</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Tripadvisor</h5>
+                                    <p>Actividades extremas y excursiones recomendadas por viajeros.</p>
+                                    <small>📍 Nueva Zelanda, Canadá</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag7.jpg">
-                            <h3>Azul</h3>
-                            <span>Ciudades</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Descubrí las ciudades más vibrantes con paquetes urbanos completos.</p>
-                            <small>📍 Río de Janeiro, Buenos Aires</small>
-                            <div class="rating">★★★★☆</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag7.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Azul</h5>
+                                    <span>Ciudades</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Azul</h5>
+                                    <p>Descubrí las ciudades más vibrantes con paquetes urbanos.</p>
+                                    <small>📍 Río, Buenos Aires</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag8.jpg">
-                            <h3>Budget YATRA</h3>
-                            <span>Sudamérica</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Viajes económicos por Sudamérica con excelente relación calidad-precio.</p>
-                            <small>📍 Chile, Bolivia, Argentina</small>
-                            <div class="rating">★★★★★</div>
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="agency-card">
+                            <div class="card-inner">
+
+                                <div class="card-front text-center p-3">
+                                    <img src="../assets/image/ag8.jpg" class="img-fluid rounded mb-3">
+                                    <h5>Budget YATRA</h5>
+                                    <span>Sudamérica</span>
+
+                                    <div class="rating mt-2">
+                                        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                                    </div>
+
+                                    <button class="btn btn-outline-primary mt-3 flip-btn">Ver más</button>
+                                </div>
+
+                                <div class="card-back text-center p-3">
+                                    <h5>Budget YATRA</h5>
+                                    <p>Viajes económicos por Sudamérica.</p>
+                                    <small>📍 Chile, Bolivia, Argentina</small>
+
+                                    <button class="btn btn-outline-light mt-3 flip-btn">Volver</button>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="card-front">
-                            <img src="../assets/image/ag9.jpg">
-                            <h3>Velvet Escape</h3>
-                            <span>Premium</span>
-                        </div>
-                        <div class="card-back">
-                            <p>Experiencias premium con lujo, confort y atención personalizada.</p>
-                            <small>📍 Dubái, Maldivas, Suiza</small>
-                            <div class="rating">★★★★★</div>
-                        </div>
-                    </div>
                 </div>
 
             </div>
+
         </section>
+
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer py-4">
+        <div class="container">
 
-        <div class="footer-top">
-            <div class="newsletter">
-                <h3>Suscribite</h3>
-                <input type="email" placeholder="Tu email">
-                <button>Enviar</button>
+            <div class="row align-items-center text-center text-lg-start gy-4">
+
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+
+                    <h3 class="mb-3">Suscribite</h3>
+
+                    <div class="d-flex flex-column flex-sm-row gap-2 mb-4">
+                        <input type="email" class="form-control" placeholder="Tu email">
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
+
+                    <div class="social-icons d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#" class="icon icon-facebook" aria-label="Facebook"></a>
+                        <a href="#" class="icon icon-instagram" aria-label="Instagram"></a>
+                        <a href="#" class="icon icon-twitter" aria-label="Twitter"></a>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-6 text-center">
+                    <iframe src="https://www.openstreetmap.org/export/embed.html" class="w-100 rounded"
+                        style="height:150px; border:0;">
+                    </iframe>
+                </div>
+
             </div>
 
-            <div class="map">
-                <iframe src="https://www.openstreetmap.org/export/embed.html"></iframe>
+            <div class="text-center mt-4">
+                <p class="mb-0">© 2026 GlobeTravel</p>
             </div>
+
         </div>
-
-        <p>© 2026 GlobeTravel</p>
-
     </footer>
     <script src="../js/darktheme.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <script src="../js/flip.js"></script>
+    <script src="../js/rating.js"></script>
+
 </body>
 
 </html>

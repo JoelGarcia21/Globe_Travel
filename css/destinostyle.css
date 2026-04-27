@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
 }
+
 body.dark {
     --bg-main: #f8fafc;
     --bg-secondary: #e2e8f0;
@@ -20,7 +21,7 @@ body.dark {
 
 body {
     color: var(--text);
-    background: var(--bg-main);
+    background: var(--bg-secondary);
     font-family: Arial, sans-serif;
 }
 
@@ -34,66 +35,83 @@ body {
 }
 
 /* HEADER */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
+.navbar {
     background-color: var(--bg-main);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
-    font-size: 1.2rem;
+.navbar img {
+    height: 45px;
+    margin: auto;
 }
 
-.logo img {
-    width: 40px;
-    height: 40px;
+.navbar-toggler-icon {
+    filter: invert(1);
 }
 
-.nav ul {
-    display: flex;
-    list-style: none;
+.navbar ul {
     gap: 30px;
 }
 
-.nav a {
+.nav-item #darkToggle{
+    margin-top: 5px;
+}
+
+.navbar .nav-link {
     color: var(--text);
     text-decoration: none;
     position: relative;
-    font-size: 0.95rem;
     transition: 0.3s;
 }
 
-
-.nav a::after {
+.navbar .nav-link::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -5px;
+    bottom: -1px;
     width: 0%;
     height: 2px;
     background: var(--accent);
     transition: 0.3s;
 }
 
-.nav a:hover {
+.navbar .navbar-nav .nav-link:hover {
     color: var(--accent);
 }
 
-.nav a:hover::after {
+.navbar .nav-link:hover::after {
     width: 100%;
 }
 
-/* DESTINOS */
+.navbar .nav-link:visited,
+.navbar .nav-link:active {
+    color: var(--text);
+}
 
-.destinos h1 {
-    font-size: 2rem;
+/* FOOTER */
+.footer {
+    background: #222;
+    color: white;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    background-image: url('../assets/image/socialmedia/socialmedias.png');
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    display: inline-block;
+}
+
+.icon-facebook {
+    background-position: 50% 5%;
+}
+
+.icon-instagram {
+    background-position: 5% 5%;
+}
+
+.icon-twitter {
+    background-position: 50% 95%;
 }
 
 /* FILTROS */
@@ -102,98 +120,82 @@ body {
     justify-content: center;
     gap: 15px;
     padding: 10px;
+
 }
 
-.filtros label {
+.filtros button {
     padding: 8px 16px;
     background: var(--card);
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
     border: 1px solid transparent;
+    color: var(--text);
 }
 
-.filtros label:hover {
+.filtros button:hover {
     border: 1px solid var(--accent);
-    color: var(--accent);
 }
+
 
 .grid {
-    column-count: 2;
-    column-gap: 10px;
-    padding: 20px;
+    column-count: 1;
+    column-gap: 15px;
 }
 
+@media (min-width: 576px) {
+    .grid {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .grid {
+        column-count: 3;
+    }
+}
+
+/* CARD */
 .grid .card {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    background: var(--card);
-    margin-bottom: 10px;
-}
-
-.grid .card img {
-    width: 100%;
-    margin: 5px;
+    break-inside: avoid;
+    margin-bottom: 15px;
     border-radius: 10px;
-}
-
-.grid .overlay {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 15px;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    transform: translateY(100%);
-    transition: 0.3s;
-}
-
-.grid .card:hover .overlay {
-    transform: translateY(0);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
 }
 
 .grid .card img {
-    transition: 0.3s;
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
 .grid .card:hover img {
     transform: scale(1.1);
 }
 
-.destinos input {
-    display: none;
+.grid .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: 0.3s;
 }
 
-/* FILTRO  */
-#cultural:checked~.grid .card:not(.cultural),
-#naturaleza:checked~.grid .card:not(.naturaleza),
-#playa:checked~.grid .card:not(.playa),
-#gastronomico:checked~.grid .card:not(.gastronomico),
-#religioso:checked~.grid .card:not(.religioso) {
-    display: none;
+.grid .card:hover .overlay {
+    opacity: 1;
 }
 
-@media (max-width: 600px) {
-    .grid {
-        columns: 1;
-    }
+.grid .overlay h3 {
+    color: white;
 }
 
 /* TABLA */
-.tabla-container {
-    padding: 20px;
-    overflow-x: auto;
-}
-
-.tabla {
-    width: 100%;
-    border-collapse: collapse;
-    background: var(--card);
-    border-radius: 12px;
-    overflow: hidden;
-    min-width: 600px;
-}
-
 .tabla thead {
     background: var(--bg-main);
 }
@@ -219,27 +221,7 @@ body {
     background: rgba(59, 130, 246, 0.1);
 }
 
-#cultural:checked~.filtros label[for="cultural"] {
-    background: var(--accent);
-}
-
-#naturaleza:checked~.filtros label[for="naturaleza"] {
-    background: var(--accent);
-}
-
-#playa:checked~.filtros label[for="playa"] {
-    background: var(--accent);
-}
-
-#gastronomia:checked~.filtros label[for="gastronomia"] {
-    background: var(--accent);
-}
-
-#religioso:checked~.filtros label[for="religioso"] {
-    background: var(--accent);
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     .tabla thead {
         display: none;
@@ -254,10 +236,12 @@ body {
     }
 
     .tabla tr {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        padding: 15px;
         background: var(--card);
         border-radius: 10px;
         padding: 10px;
+        border: 1px solid var(--text);
     }
 
     .tabla td {
@@ -265,6 +249,7 @@ body {
         justify-content: space-between;
         padding: 10px;
         border: none;
+
     }
 
     .tabla td::before {
@@ -274,61 +259,18 @@ body {
     }
 }
 
-/* FOOTER */
-.footer {
-    background: #222;
-    color: white;
-    padding: 20px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.table-responsive {
+    padding: 10px;
 }
 
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.tabla {
+    width: 100%;
+    background: var(--card);
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 1rem;
 }
 
-.newsletter {
-    text-align: left;
-}
-
-.newsletter h3 {
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-
-.newsletter input {
-    flex: 1;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
-    color: #000;
-}
-
-.newsletter button {
-    padding: 12px 18px;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--accent);
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.newsletter button:hover {
-    background-color: #2563eb;
-}
-
-.map iframe {
-    width: 300px;
-    height: 150px;
-    border: none;
-}
-
-.footer p {
-    text-align: center;
+.tabla thead {
+    background: var(--bg-main);
 }
