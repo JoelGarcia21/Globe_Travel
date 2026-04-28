@@ -11,16 +11,20 @@
     padding: 0;
 }
 
-body {
-    color: var(--text);
-    background: var(--bg-secondary);
-    font-family: Arial, sans-serif;
-
-    display: flex;
-    flex-direction: column;
-   
+body, html {
+    height: 100%;
 }
 
+body{
+    min-height: 100vh; /* 🔥 CLAVE */
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-main);
+}
+
+main{
+    flex: 1;
+}
 body.dark {
     --bg-main: #f8fafc;
     --bg-secondary: #e2e8f0;
@@ -125,8 +129,8 @@ body.dark {
     border: none;
 }
 
-#formContacto{
-    min-height: 530px;
+#formContacto {
+    min-height: 600px;
 }
 .form-control {
     color: var(--text);

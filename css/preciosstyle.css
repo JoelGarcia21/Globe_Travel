@@ -116,6 +116,7 @@ body.dark {
 
 /* OFERTAS */
 .packs {
+    min-height: 80vh;
     padding: 40px;
     background: var(--bg-secondary);
     text-align: center;
